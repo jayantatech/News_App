@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- all links hear  -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>News app by Jayanta Biswas</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav flex container">
+            <a href="#" class="logo">
+                <img src="assets/open-news-2017.png" alt="logo img">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item">IPL</li>
+                    <li class="hover-link nav-item">Finance</li>
+                    <li class="hover-link nav-item">Tech</li>
+                    <li class="hover-link nav-item">Startup</li>
+                    <li class="hover-link nav-item">Money</li>
+                    <li class="hover-link nav-item">Ai</li>
+                </ul>
+
+            </div>
+            <div class="serch-bar">
+                <input type="text" class="news-text" placeholder="e.g. Science" id="search-input">
+                <button class="search-button" id="search-btn">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container flex container" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card" id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://picsum.photos/seed/picsum/400/200" alt="" id="card-img">
+            </div>
+            <div class="card-container">
+                <h3 class="news-title" id="news-title">this is title</h3>
+                <h6 class="news-sourc" id="news-sourch">End gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorem dolore dolorum optio
+                    voluptatum nihil cum tempora minus ullam officiis?
+                </p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
